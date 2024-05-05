@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --main-color: #ff4424;
+    --second-color: #f77214;
+    --text-color: #080a08;
+    --text-alter-color: #868e96;
+    --third-color: #833AF0;
+    --fourth-color: #7A56B0;
+    --fifth-color: #FFC107;
+    --bg-color: #fff;
+    --container-color: #faeee4;
+}
+
+img{
+    width: 600px;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 3rem 0 2 2rem;
+}
+
+.container{
+    max-width: 1060px;
+    width: 100%;
+    margin: auto;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: var(--container-color)
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #e1dbd2;
+}
+
+.logo-img{
+    max-width: 150px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.nav-link{
+  
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--third-color);
+    transition: 0.3s;
+}
+.sign-up, 
+.mobile-sign-up{
+    font-size: 0.9rem;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+    padding: 8px 16px;
+    background: var(--third-color);
+    color: var(--bg-color);
+    border-radius: 4px;
+
+    /* New properties for centering */
+    display: flex; /* Enables flexbox for button */
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+
+}
+
+.sign-up:hover, 
+.mobile-sign-up:hover{
+    background: var(--fourth-color);
+    transition: 0.3s;
+}
+
+.mobile-sign-up{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+
+.menu-icon div{
+    display: block;
+    background: var(--text-color);
+    height: 2px;
+    width: 24px;
+    transition: 0.3s;
+}
+
+.move .line1{
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+.move .line2{
+    opacity: 0;
+}
+.move .line3{
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* HOME */
+
+.home {
+    padding-top: 7rem !important;
+    padding-bottom: 50px;
+    background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home-content{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+ /* CTA SECTION */
+.cta {
+    text-align: left;
+    margin: 2rem auto;  max-width: 800px;  }
+  
+  .cta h2 {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .cta p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  .cta button {
+    background-color: var(--third-color);
+    color: #fff;
+    height: 45px;
+    width: 150px;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  
+    /* New properties for centering */
+    display: flex; /* Enables flexbox for button */
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+  }
+  
+.cta button:hover {
+    background-color: var(--fourth-color); 
+    color: var(--bg-color);
+  }
+
+.border-home{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e1dbd2;
+}
+
+.home-img{
+    padding-left: 50px;
+    max-width: 900px
+}
+
+.home-btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home-btns a{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+/* DATE PICKER */
+  .search-form {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+  }
+  
+  .search-form label {
+    margin-right: 1rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-form label i {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  
+  .search-form input[type="text"], .search-form input[type="date"] {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+  }
+  
+  .search-form button {
+    background-color:var(--third-color);
+    font-weight: 600;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  .search-form button:hover {
+    background-color: var(--fourth-color);
+    color: white;
+  }
+  
+  .separator {
+    width: 20px;
+  }
+  /* ---------------------------------------- */
+/* HOW IT WORKS */
+.how-it-works {
+    padding-top: 50px;
+    text-align: center;
+    margin: 2rem auto;  max-width: 800px;
+    padding-bottom: 50px;
+  }
+  
+  .how-it-works p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .how-it-works h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .how-it-works img {
+    width: 100%;  }
+
+    /* ________________________________________________ */
+/* HOME SERVICES SECTION */
+.home-services {
+    display: flex;
+    align-items: center;  /* Centers content vertically */
+    justify-content: space-between; /* Distributes content horizontally */
+    margin: 2rem auto;
+    max-width: 1000px;  /* Adjust as needed */
+  }
+  
+  .home-services img {
+    width: 50%;
+    object-fit: cover;  /* Scales image to fill container while maintaining aspect ratio */
+    padding-right: 50px;
+    }
+
+  
+  .text-content {
+    text-align: left;
+    width: 50%;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .service-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-highlights li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .service-highlights li i {
+    font-size: 1.5rem;
+    margin-right: 1rem; /* Adjust icon color as needed */
+
+    /* Set width and height for a square */
+    width: 50px;
+    height: 50px;
+
+  
+    /* Add a solid border */
+    border: 3px solid #ccc;
+  
+    /* Center the icon content (optional) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Round the corners slightly (optional) */
+    border-radius: 15px;
+  
+    /* Change icon color to orange */
+    color: var(--fifth-color);
+  }
+  
+  .service-highlights li div {
+    margin-left: 1rem;
+  }
+  
+  .service-highlights li h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .service-highlights li p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+/* FLEET CSS */
+/* FLEET SECTION */
+.cars{
+  padding-top: 7rem !important;
+}
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.heading span{
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--fifth-color);
+  text-transform: uppercase;
+}
+
+.heading h2{
+  font-size: 2rem;
+  font-weight: 600;
+}
